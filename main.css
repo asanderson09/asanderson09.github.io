@@ -54,7 +54,7 @@ img {
 
 .section-heading h1 {
     font-size: 3.5rem;
-    color: rgba(255,255,255, .3);
+    color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
     position: relative;
     margin-bottom: 1rem;
@@ -127,13 +127,13 @@ li {
 
 .nav-link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     padding:  1rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    background: linear-gradient(to top, #ffe838, #fd57bf );
+    background: linear-gradient(to top, #ffe838, #ff0026 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
@@ -162,7 +162,7 @@ li {
 }
 
 .bar {
-    background: linear-gradient(to right, #ffe838, #fd57bf);
+    background: linear-gradient(to right, #ffe838, #ff0026);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -204,7 +204,7 @@ li {
 .landing-text h1 {
     font-size: 20rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, #ffe838, #ff0026);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     padding: 1rem;
@@ -232,7 +232,7 @@ li {
 
 .about-heading h1 {
     font-size: 10rem;
-    opacity: .3;
+    opacity: .5;
 }
 
 .about-heading h6 {
@@ -291,14 +291,14 @@ li {
     width: 10rem;
     height: 10rem;
     border: 3px solid #ffe838;
-    background-color: #fd57bf;
+    background-color: #ff0026;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 
 .icon-container i {
-    color: #ffe838;
+    color: #000000;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -317,8 +317,7 @@ li {
     margin-bottom: 0;
 }
 
-.profile-img {
-    width: 50rem;
+.portfolio-img {
     flex: 1;
 }
 
@@ -337,7 +336,7 @@ li {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .portfolio-description .cta{
@@ -372,7 +371,7 @@ li {
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 1rem;
-    opacity: .3;
+    opacity: .5;
 }
 
 .timeline .date {
@@ -406,7 +405,7 @@ li {
 
 .timeline .date::after{
     content: " ";
-    box-shadow: 0 0 0 4px #fd57bf;
+    box-shadow: 0 0 0 4px #ff0026;
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
@@ -431,24 +430,26 @@ form label {
     font-size: 1.5rem;
 }
 
-input,select,textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 1rem;
     margin-bottom: 5px;
     border: none;
-    outline-color: #fd57bf;
+    outline-color: #ff0026;
 }
 
-input [type = submit] {
+#button {
     width: initial;
-    background-color: #fd57bf;
+    background-color: #ff0026;
     color: #eee;
     padding: 1rem 2rem;
     border-radius: .8rem; 
     transition: background-color 650ms;
 }
 
-input [type = submit]:hover {
+#button:hover {
     color: #221e3f;
     background-color: #ffe838;
 }
@@ -490,7 +491,7 @@ input [type = submit]:hover {
 /*Start animations*/
 @keyframes pulse {
     0%{ 
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.99);
     }
     70%{
         box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
