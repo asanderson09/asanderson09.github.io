@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
+	<link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/superuser/img/favicon.ico?v=29b26120d2c5">
+	<script src="https://cdn.rawgit.com/coderitual/odoo/feature/codevember16/lib/odoo.js"></script>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Anthony Anderson</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anthony's Portfolio</title>
+	<link rel="stylesheet" href="./reset.css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -41,8 +44,16 @@
 			</ul>
 		</nav>
 		<div class="landing-text">
-			<h1>Anthony Anderson</h1>
-			<h6>Web Developer</h6>
+			<div id="nameText">
+				<h1>Anthony Anderson</h1>
+			</div>	
+			<h1 class="js-odoo"></h1>
+			
+			<!-- <i class="fa fa-keyboard" aria-hidden="true"></i> -->
+			<h4 style="display:inline" id="code">&lt &gt</h4>
+			<h6 style="display: inline"> The Developer</h6>
+			<h4 style="display: inline" id="code">&lt/&gt</h4>
+
 		</div>
 	</header>
 
@@ -50,7 +61,7 @@
 	<section class="about" id="about">
 		<div class="container">
 			<div class="profile-img" data-aos="fade-right" data-aos-delay="600">
-				<img src="images/portfoliloProfile.jpeg" alt="profile image">
+				<img src="./images/selfCrop.jpeg" alt="profile image">
 			</div>
 			<div class="about-details" data-aos="fade-left" data-aos-delay="400">
 				<div class="about-heading">
@@ -66,7 +77,7 @@
 					with the mental fortitude to see those challenges until the end, results in an
 					honorable legacy. Below that surface is a silly, and nerdy Jack-of-all-trades,
 					who enjoys, traveling, competing, and creating priceless memories with friends and family!
-					<br><br> <strong>DISCLOSURE:</strong> If your fruit snacks are missing I probably ate them!
+					<br><br>
 
 				</p>
 				<div class="social-media">
@@ -79,7 +90,7 @@
 						<li>
 							<a href="https://drive.google.com/open?id=0B7VaQ0f0tuj1MDd4em1Ld1E0cUR2LUF2b2dLamhDM2hhdVV3"
 								class="icon-link">
-								<i class="fa fa-id-card" aria-hidden="true" data-aos="flip-down"
+								<i class="fa fa-id-card" aria-hidden="true" data-aos="zoom-in"
 									data-aos-delay="1200"><br>Résumé</i>
 							</a>
 						</li>
@@ -144,7 +155,7 @@
 			</div>
 			<div class="portfolio-item">
 				<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-					<a href="https://asanderson09.github.io/Project1/"> <img src="images/get juiced.png"></a>
+					<a href="https://asanderson09.github.io/Project1/"> <img class="portfolio-img" src="images/get juiced.png"></a>
 				</div>
 				<div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
 					<h6>App Development</h6>
@@ -161,20 +172,20 @@
 			<div class="portfolio-item">
 				<div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
 					<h6>Web Design</h6>
-					<h1>Product Layout</h1>
+					<h1>Friend-Finder</h1>
 					<p>
-						First Responsive portfolio
+						App that pairs you with a compatible friend based on survey questions. 
 					</p>
 					<!-- <a href="#" class="cta">View about-details</a> -->
 				</div>
 				<div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
-					<a href="https://asanderson09.github.io/Responsive-Portfolio/"> <img
-							src="images/portitem2.jpeg"></a>
+					<a href="https://pacific-shelf-16378.herokuapp.com"> 
+						<img class="portfolio-img" src="images/friendFinderIMG.png"></a>		
 				</div>
 			</div>
 			<div class="portfolio-item ">
 				<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
-					<a href="https://asanderson09.github.io/HW-Wireframe/"><img src="images/portitem3.jpeg"></a>
+					<a href="https://asanderson09.github.io/HW-Wireframe/"><img class="portfolio-img" src="images/portitem3.jpeg"></a>
 				</div>
 				<div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
 					<h6>Web Design</h6>

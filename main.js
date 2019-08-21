@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // slot machine text once page loads
+    odoo.default({ el: '.js-odoo', from: 'WELCOME', to: 'ANTHONY', animationDelay: 1000 });
+
     //opens nav bar menu
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
@@ -15,13 +18,13 @@ $(document).ready(function () {
     $('nav a[href*="#"]').on('click', function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 100
-        }, 2000);     
+        }, 2000);
     });
 
     $('#up').on('click', function () {
         $('html, body').animate({
             scrollTop: 0
-        }, 2000);     
+        }, 2000);
     });
 
     AOS.init({
