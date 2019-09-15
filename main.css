@@ -642,20 +642,18 @@ input, select, textarea {
     .nav-link {
         font-size: 3.5rem;
     }
-    p {
+    
+    .about .container {
+        display: flow-root;
+        align-items: center;
+        justify-content: center;
+    }
+   p {
         display: flex;
         margin-block-start: 0em;
         margin-block-end: 1em;
         margin-inline-start: 63px;
         margin-inline-end: 50px;
-    }
-    .about .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .about-details {
-        display: contents
     }
     .social-media i {
         font-size: 4rem;
